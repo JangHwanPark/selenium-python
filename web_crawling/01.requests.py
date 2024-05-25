@@ -1,7 +1,7 @@
 import requests
 
 # 1번 get 요청 테스트
-res = requests.get("https://www.google.com")
+res = requests.get("https://pages.coupang.com/p/81915")
 # res = requests.get("https://www.google.com/error")
 print(f"응답코드: {res.status_code}")
 
