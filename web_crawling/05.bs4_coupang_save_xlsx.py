@@ -42,6 +42,7 @@ for url in urls:
 
     # 클래스가 weblog, tab 인 div, li 태그를 모두 찾아옴
     products = soup.find_all("div", attrs={"class": re.compile("^weblog carousel-contents-grid__product-unit")})
+    print(products)
 
     # 제품 정보를 리스트에 저장
     for product in products:
@@ -99,12 +100,13 @@ for url in urls:
         product_list.append([
             brand_name, category_name, name, color, storage, discount, price, final_price, availability, reviews
         ])
+        print(product_list)
 
 # DataFrame 생성
 df = pd.DataFrame(
     product_list,
     columns=[
-        "brand", "category", "name", "color", "storage", "discount", "price", "final_price","availability", "reviews"
+        "brand", "category", "name", "color", "storage", "discount", "price", "final_price", "availability", "reviews"
     ]
 )
 
