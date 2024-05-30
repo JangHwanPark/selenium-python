@@ -48,34 +48,27 @@ def generate_user_data(num_users, user_numbers):
         users.append(user_data)
         user_numbers.append(user_data["uid"])
 
-    return users, user_numbers
+    return users
 
 
-def save_user_data_to_csv(users, filename):
-    df = pd.DataFrame(users)
-    df.to_csv(filename, index=False)
-
-
-def generate_order_data(num_orders, users):
+def generate_order_data(num_orders, user_numbers):
     # 주문 상태, 결제 방법, 할인 코드 목록
     order_statuses = ["처리 중", "배송 중", "배송 완료"]
     payment_methods = ["신용카드", "페이팔", "계좌이체", "카카오 페이"]
     discount_codes = ["DISC10", "SAVE15", "FREESHIP", None]
 
     orders = []
-    for _ in range(num_orders):
+    print('=' * 10 + 'generate_order_data' + '=' * 10)
+    for i in range(0, num_orders):
         order_id = str(uuid.uuid4())
-        user = random.choice(users)
-        user_id = random.choice(users)
-
-        # product = random.choice(products)
-        # product_id = product["product_id"]
-
-        order_date = generate_random_date(datetime(2023, 1, 1), datetime(2024, 5, 27)).strftime("%Y-%m-%d")
-        delivery_date = (datetime.strptime(order_date, "%Y-%m-%d") + timedelta(days=random.randint(1, 10))).strftime(
-            "%Y-%m-%d")
+        user_id = user_numbers[i]['uid']
+        order_date = generate_random_date(
+            datetime(2023, 1, 1),
+            datetime(2024, 5, 27)).strftime("%Y-%m-%d")
+        delivery_date = (datetime.strptime(
+            order_date, "%Y-%m-%d") + timedelta(
+            days=random.randint(1, 10))).strftime("%Y-%m-%d")
         quantity = random.randint(1, 5)
-
         # price = product["price"]
         # total_price = quantity * price
         # shipping_address = user["address"]
@@ -87,12 +80,12 @@ def generate_order_data(num_orders, users):
         customer_note = random.choice([None, "Please deliver after 5 PM", "Leave at the front door", None])
 
         order_data = {
-            "order_id": order_id,
-            "user_id": user_id,
-            # "product_id": product_id,
-            "order_date": order_date,
-            "delivery_date": delivery_date,
+            'oid': order_id,
+            'uid': user_id,
+            'order_date': order_date,
+            'delivery_date': delivery_date,
             "quantity": quantity,
+            # "product_id": product_id,
             # "price": price,
             # "total_price": total_price,
             # "shipping_address": shipping_address,
@@ -103,34 +96,34 @@ def generate_order_data(num_orders, users):
             "tracking_number": tracking_number,
             "customer_note": customer_note
         }
+
+        print(f'order_data: {order_data}')
         orders.append(order_data)
 
     return orders
 
 
-def iterator_list(item_list):
-    for item in item_list:
-        return item
+def save_user_data_to_csv(users, filename):
+    df = pd.DataFrame(users)
+    df.to_csv(filename, index=False)
 
 
 # 사용자 번호 저장용 리스트
 uid_list = []
 
-# 사용자 데이터, 주문 데이터 생성
-iterator_data = 10000
-user_list = generate_user_data(iterator_data, uid_list)
-order_list = generate_order_data(iterator_data, user_list)
+# 사용자 데이터 생성 및 CSV 파일로 저장
+user_list = generate_user_data(10000, uid_list)
+# save_user_data_to_csv(user_list, 'csv_data/users.csv')
 
-# 터미널 출력 (테스트)
-print_item = iterator_list(user_list)
-print(print_item)
+print(user_list[:2])
+print('\n')
+print(user_list[0]['uid'])
+print(user_list[1]['uid'])
+print('\n')
+for i in range(0, 5):
+    print(user_list[i]['uid'])
+print('\n')
 
-# 사용자 아이디 얻는 함수
-# print_uid = get_user_uid(user_list, uid_list)
-# print(print_uid)
-
-for i in uid_list:
-    print(i)
-
-# CSV 파일로 저장
-save_user_data_to_csv(user_list, 'csv_data/users.csv')
+# 주문 데이터 생성 및 CSV 파일로 저장
+order_list = generate_order_data(10, user_list)
+save_user_data_to_csv(order_list, 'csv_data/orders.csv')
