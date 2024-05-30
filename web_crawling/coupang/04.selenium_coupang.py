@@ -38,18 +38,29 @@ for lis in original_list:
 # 크롬 셀레니움 옵션
 options = webdriver.ChromeOptions()
 # options.add_argument("--headless")
-options.binary_location = r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"  # 크롬 설치 경로 설정
+
+# 크롬 실행 파일의 경로를 지정합니다. 이 경로는 크롬 브라우저가 설치된 위치를 가리킵니다.
+options.binary_location = r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
+
+# 웹사이트가 자동화된 크롬을 일반 사용자의 브라우저로 인식하지 못하게 합니다.
 options.add_argument("--disable-blink-features=AutomationControlled")
+
+# 브라우저 상단에 "자동화된 소프트웨어에 의해 제어됩니다"라는 정보바를 비활성화합니다.
 options.add_argument("--disable-infobars")
+
+# 자동화 탐지를 피하기 위한 크롬 드라이버의 일부 기능을 비활성화합니다.
 options.add_experimental_option("excludeSwitches", ["enable-automation"])
 options.add_experimental_option('useAutomationExtension', False)
-options.add_argument("authority=" + "www.coupang.com")
-options.add_argument("method=" + "GET")
-options.add_argument("accept=" + "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9")
-options.add_argument("accept-encoding=" + "gzip, deflate, br")
-options.add_argument("user-agent=" + "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.104 Whale/3.13.131.36 Safari/537.36")
-options.add_argument("sec-ch-ua-platform=" + "macOS")
-options.add_argument("cookie=" + "PCID=31489593180081104183684; _fbp=fb.1.1644931520418.1544640325; gd1=Y; X-CP-PT-locale=ko_KR; MARKETID=31489593180081104183684; sid=03ae1c0ed61946c19e760cf1a3d9317d808aca8b; x-coupang-origin-region=KOREA; x-coupang-target-market=KR; x-coupang-accept-language=ko_KR;")
+
+# HTTP 요청에 사용될 기본 헤더를 설정합니다.
+options.add_argument("authority=" + "www.coupang.com")  # 요청을 보낼 권한을 가진 호스트를 지정합니다.
+options.add_argument("method=" + "GET")  # 사용할 HTTP 메소드를 GET으로 지정합니다.
+options.add_argument("accept=" + "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9")  # 서버로부터 어떤 타입의 데이터를 받을 수 있는지 지정합니다.
+options.add_argument("accept-encoding=" + "gzip, deflate, br")  # 서버로부터 받을 수 있는 인코딩 타입을 지정합니다.
+options.add_argument("user-agent=" + "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.104 Whale/3.13.131.36 Safari/537.36")  # 브라우저의 유저 에이전트를 지정합니다.
+options.add_argument("sec-ch-ua-platform=" + "macOS")  # 사용자의 운영체제 정보를 제공합니다.
+options.add_argument("cookie=" + "PCID=31489593180081104183684; _fbp=fb.1.1644931520418.1544640325; gd1=Y; X-CP-PT-locale=ko_KR; MARKETID=31489593180081104183684; sid=03ae1c0ed61946c19e760cf1a3d9317d808aca8b; x-coupang-origin-region=KOREA; x-coupang-target-market=KR; x-coupang-accept-language=ko_KR;")  # 사이트에 사용할 쿠키를 설정합니다.
+
 
 # 모든 데이터를 저장할 리스트
 all_product_data = []
