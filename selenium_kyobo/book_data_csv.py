@@ -21,19 +21,19 @@ def download_image(image_url, save_path):
 
 
 product_code = {
-    'computer_science': 3301,
-    'software_engineering': 330113,
-    'info_communication_engineering': 330115,
-    'computer_architecture': 330117,
-    'operating_system_theory': 330123,
-    'data_and_algorithm': 330127,
-    'ai': 330143
+    'Computer Science': 3301,
+    'Software Engineering': 330113,
+    'Information Communication Engineering': 330115,
+    'Computer Architecture': 330117,
+    'Operating System Theory': 330123,
+    'Data and Algorithm': 330127,
+    'AI': 330143
 }
 
 category_list = [
-    'computer_science', 'software_engineering',
-    'info_communication_engineering', 'computer_architecture',
-    'operating_system_theory', 'data_and_algorithm', 'ai'
+    'Computer Science', 'Software Engineering',
+    'Information Communication Engineering', 'Computer Architecture',
+    'Operating System Theory', 'Data and Algorithm', 'AI'
 ]
 
 url_list = []
@@ -120,7 +120,9 @@ for page_title, main_url in zip(category_list, url_list):
                 download_image(book_img_url, image_path)
 
                 books_data.append([
+                    img_cnt,
                     book_name,
+                    page_title,
                     book_author,
                     book_publisher,
                     book_discount,
@@ -128,7 +130,8 @@ for page_title, main_url in zip(category_list, url_list):
                     book_price_normal,
                     book_point,
                     book_description,
-                    book_review
+                    book_review,
+                    f'kyobo/{image_filename}'
                 ])
 
                 print(books_data)
@@ -140,6 +143,18 @@ for page_title, main_url in zip(category_list, url_list):
     time.sleep(5)
 
 # Save Data
-df = pandas.DataFrame(books_data, columns=['name', 'author', 'publisher', 'discount', 'price', 'price_normal',
-                                           'point', 'description', 'review'])
+df = pandas.DataFrame(books_data, columns=[
+    'book_id',
+    'name',
+    'category',
+    'author',
+    'publisher',
+    'discount',
+    'price',
+    'price_normal',
+    'point',
+    'description',
+    'review',
+    'img'
+])
 df.to_csv('csv_data/books.csv', index=False)
