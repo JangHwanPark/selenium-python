@@ -5,7 +5,6 @@ from selenium.webdriver.chrome.service import Service
 from selenium.common.exceptions import NoSuchElementException
 from webdriver_manager.chrome import ChromeDriverManager
 from openpyxl import Workbook
-import os
 
 # product_code 를 dictionary 로 생성 (url 참조)
 product_code = {
