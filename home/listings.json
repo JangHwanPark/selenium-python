@@ -1,0 +1,302 @@
+[
+    {
+        "price": "$247,000",
+        "home_state": "2 beds\n1 bath\n850 sq ft",
+        "address": "1841 N Monticello Ave Unit 3W, Chicago, IL 60647"
+    },
+    {
+        "price": "$299,999",
+        "home_state": "2 beds\n1.5 baths\n1,469 sq ft",
+        "address": "6652 N Glenwood Ave Unit 2N, Chicago, IL 60626"
+    },
+    {
+        "price": "$624,900",
+        "home_state": "6 beds\n2 baths\n\u2014sq ft",
+        "address": "1229 W 32nd Pl, Chicago, IL 60608"
+    },
+    {
+        "price": "$435,000",
+        "home_state": "3 beds\n2 baths\n\u2014sq ft",
+        "address": "4046 N Clarendon Ave Unit 1N, Chicago, IL 60613"
+    },
+    {
+        "price": "$400,000",
+        "home_state": "3 beds\n2 baths\n1,500 sq ft",
+        "address": "7200 W Palmer St Unit 3E, Elmwood Park, IL 60707"
+    },
+    {
+        "price": "$489,000",
+        "home_state": "4 beds\n2.5 baths\n2,340 sq ft\n0.23 acre (lot)",
+        "address": "5210 S King Dr Unit F, Chicago, IL 60615"
+    },
+    {
+        "price": "$1,198,000",
+        "home_state": "3 beds\n2.5 baths\n1,546 sq ft\n4,000 sq ft (lot)",
+        "address": "424 27th Ave E, Seattle, WA 98112"
+    },
+    {
+        "price": "$515,000",
+        "home_state": "2 beds\n1.5 baths\n1,058 sq ft",
+        "address": "150 Melrose Ave E #101, Seattle, WA 98102"
+    },
+    {
+        "price": "$924,000",
+        "home_state": "3 beds\n3 baths\n2,150 sq ft\n3,962 sq ft (lot)",
+        "address": "12337 Sand Point Way NE, Seattle, WA 98125"
+    },
+    {
+        "price": "$1,800,000",
+        "home_state": "4 beds\n3 baths\n3,170 sq ft\n3,600 sq ft (lot)",
+        "address": "1940 8th Ave W, Seattle, WA 98119"
+    },
+    {
+        "price": "$649,000",
+        "home_state": "2 beds\n2 baths\n1,116 sq ft",
+        "address": "530 4th Ave W #301, Seattle, WA 98119"
+    },
+    {
+        "price": "$378,900",
+        "home_state": "1 bed\n1 bath\n609 sq ft",
+        "address": "107 20th Ave #307, Seattle, WA 98122"
+    },
+    {
+        "price": "$799,000",
+        "home_state": "3 beds\n2 baths\n1,300 sq ft",
+        "address": "4733 Elmwood Ave #402, Los Angeles, CA 90004"
+    },
+    {
+        "price": "$475,000",
+        "home_state": "2 beds\n2 baths\n927 sq ft",
+        "address": "5349 Newcastle Ave #62, Encino, CA 91316"
+    },
+    {
+        "price": "$2,400,000",
+        "home_state": "4 beds\n3 baths\n3,454 sq ft\n6,004 sq ft (lot)",
+        "address": "12236 Laurel Terrace Dr, Studio City, CA 91604"
+    },
+    {
+        "price": "$1,249,000",
+        "home_state": "4 beds\n3 baths\n2,303 sq ft\n9,977 sq ft (lot)",
+        "address": "19491 Pauma Valley Dr, Porter Ranch, CA 91326"
+    },
+    {
+        "price": "$1,698,000",
+        "home_state": "4 beds\n3.5 baths\n3,128 sq ft\n5,566 sq ft (lot)",
+        "address": "4235 W 59th Pl, Los Angeles, CA 90043"
+    },
+    {
+        "price": "$1,499,000",
+        "home_state": "4 beds\n3 baths\n2,382 sq ft\n9,513 sq ft (lot)",
+        "address": "21528 Mulholland Dr, Woodland Hills, CA 91364"
+    },
+    {
+        "price": "$630,000",
+        "home_state": "2 beds\n2 baths\n766 sq ft",
+        "address": "5252 Balboa Arms Dr #227, San Diego, CA 92117"
+    },
+    {
+        "price": "$999,900",
+        "home_state": "3 beds\n2.5 baths\n2,102 sq ft\n1.53 acres (lot)",
+        "address": "8301 Rio San Diego Dr #2, San Diego, CA 92108"
+    },
+    {
+        "price": "$595,000",
+        "home_state": "2 beds\n2 baths\n1,050 sq ft",
+        "address": "9249 Village Glen Dr #103, San Diego, CA 92123"
+    },
+    {
+        "price": "$659,000",
+        "home_state": "2 beds\n1.5 baths\n1,036 sq ft",
+        "address": "235 Market St #610, San Diego, CA 92101"
+    },
+    {
+        "price": "$709,000",
+        "home_state": "2 beds\n2 baths\n1,048 sq ft",
+        "address": "620 State St #123, San Diego, CA 92101"
+    },
+    {
+        "price": "$1,195,000",
+        "home_state": "4 beds\n2 baths\n1,657 sq ft",
+        "address": "9057 Covina St, San Diego, CA 92126"
+    },
+    {
+        "price": "$774,999",
+        "home_state": "4 beds\n3 baths\n3,011 sq ft",
+        "address": "15210 SE Linden Ln, Milwaukie, OR 97267"
+    },
+    {
+        "price": "$450,000",
+        "home_state": "3 beds\n1 bath\n1,323 sq ft\n0.35 acre (lot)",
+        "address": "227 SE 129th Ave, Portland, OR 97233"
+    },
+    {
+        "price": "$700,000",
+        "home_state": "4 beds\n2.5 baths\n1,933 sq ft\n6,534 sq ft (lot)",
+        "address": "17183 NW Countryridge Dr, Portland, OR 97229"
+    },
+    {
+        "price": "$520,000",
+        "home_state": "3 beds\n2 baths\n1,600 sq ft\n8,712 sq ft (lot)",
+        "address": "9245 SE Harrison St, Portland, OR 97216"
+    },
+    {
+        "price": "$379,500",
+        "home_state": "3 beds\n2.5 baths\n1,450 sq ft",
+        "address": "4940 SE Lucas Ct, Milwaukie, OR 97267"
+    },
+    {
+        "price": "$330,000",
+        "home_state": "1 bed\n1 bath\n721 sq ft",
+        "address": "2025 SE Caruthers St #17, Portland, OR 97214"
+    },
+    {
+        "price": "$154,900",
+        "home_state": "\u2014beds\n\u2014baths\n4,000 sq ft (lot)",
+        "address": "5512 Clay Pl NE, Washington, DC 20019"
+    },
+    {
+        "price": "$550,000",
+        "home_state": "2 beds\n2 baths\n950 sq ft",
+        "address": "811 Upshur St NW #8, Washington, DC 20011"
+    },
+    {
+        "price": "$474,900",
+        "home_state": "1 bed\n1 bath\n692 sq ft",
+        "address": "811 4th St NW #1106, Washington, DC 20001"
+    },
+    {
+        "price": "$375,000",
+        "home_state": "1 bed\n1 bath\n562 sq ft",
+        "address": "1301 20th St NW #607, Washington, DC 20036"
+    },
+    {
+        "price": "$525,000",
+        "home_state": "2 beds\n2 baths\n1,044 sq ft",
+        "address": "1709 Euclid St NW #1, Washington, DC 20009"
+    },
+    {
+        "price": "$700,000",
+        "home_state": "2 beds\n1.5 baths\n1,300 sq ft",
+        "address": "1731 T St NW #1, Washington, DC 20009"
+    },
+    {
+        "price": "$999,000",
+        "home_state": "3 beds\n2 baths\n1,537 sq ft\n2,374 sq ft (lot)",
+        "address": "382 Madison St, San Francisco, CA 94134"
+    },
+    {
+        "price": "$1,595,000",
+        "home_state": "3 beds\n3 baths\n2,100 sq ft\n1,735 sq ft (lot)",
+        "address": "338 Holladay St, San Francisco, CA 94110"
+    },
+    {
+        "price": "$1,080,000",
+        "home_state": "4 beds\n2 baths\n1,348 sq ft\n1,873 sq ft (lot)",
+        "address": "780 Delano Ave, San Francisco, CA 94112"
+    },
+    {
+        "price": "$1,325,000",
+        "home_state": "1 bed\n1 bath\n1,220 sq ft",
+        "address": "2760 Sacramento St #9, San Francisco, CA 94115"
+    },
+    {
+        "price": "$698,000",
+        "home_state": "2 beds\n2 baths\n892 sq ft",
+        "address": "301 Crescent Ct #3205, San Francisco, CA 94134"
+    },
+    {
+        "price": "$525,000",
+        "home_state": "1 bed\n1 bath\n708 sq ft",
+        "address": "5853 Mission St #2, San Francisco, CA 94112"
+    },
+    {
+        "price": "$1,100,000",
+        "home_state": "2 beds\n2.5 baths\n1,188 sq ft",
+        "address": "126 Monte Villa Ct, Campbell, CA 95008"
+    },
+    {
+        "price": "$1,749,000",
+        "home_state": "4 beds\n2.5 baths\n1,868 sq ft\n5,995 sq ft (lot)",
+        "address": "201 Prague Dr, San Jose, CA 95119"
+    },
+    {
+        "price": "$2,388,888",
+        "home_state": "5 beds\n3 baths\n2,533 sq ft\n7,841 sq ft (lot)",
+        "address": "1282 Oakglen Way, San Jose, CA 95120"
+    },
+    {
+        "price": "$868,000",
+        "home_state": "2 beds\n2 baths\n1,350 sq ft",
+        "address": "4691 Albany Cir #133, San Jose, CA 95129"
+    },
+    {
+        "price": "$798,000",
+        "home_state": "2 beds\n2 baths\n1,271 sq ft",
+        "address": "30 E Julian St #309, San Jose, CA 95112"
+    },
+    {
+        "price": "$1,688,000",
+        "home_state": "5 beds\n2 baths\n2,113 sq ft\n5,227 sq ft (lot)",
+        "address": "6232 Bothell Cir, San Jose, CA 95123"
+    },
+    {
+        "price": "$599,000",
+        "home_state": "3 beds\n2 baths\n1,362 sq ft\n4,173 sq ft (lot)",
+        "address": "1011 Brodie St #20, Austin, TX 78704"
+    },
+    {
+        "price": "$459,000",
+        "home_state": "3 beds\n2 baths\n1,484 sq ft\n0.25 acre (lot)",
+        "address": "12005 Wickline Way, Austin, TX 78717"
+    },
+    {
+        "price": "$330,000",
+        "home_state": "3 beds\n2.5 baths\n2,068 sq ft\n4,399 sq ft (lot)",
+        "address": "5513 Sunday Silence Dr, Del Valle, TX 78617"
+    },
+    {
+        "price": "$400,000",
+        "home_state": "4 beds\n3 baths\n2,358 sq ft\n8,363 sq ft (lot)",
+        "address": "11100 Long Summer Dr, Austin, TX 78754"
+    },
+    {
+        "price": "$349,000",
+        "home_state": "1 bed\n1 bath\n551 sq ft",
+        "address": "1320 Robert Browning St #208, Austin, TX 78723"
+    },
+    {
+        "price": "$550,000",
+        "home_state": "1 bed\n1 bath\n758 sq ft",
+        "address": "1600 S 1st St #313, Austin, TX 78704"
+    },
+    {
+        "price": "$509,000",
+        "home_state": "3 beds\n2.5 baths\n2,321 sq ft\n4,792 sq ft (lot)",
+        "address": "6765 Pleasant Flower St, Las Vegas, NV 89149"
+    },
+    {
+        "price": "$2,699,999",
+        "home_state": "5 beds\n5.5 baths\n4,725 sq ft\n0.24 acre (lot)",
+        "address": "10637 Patina Hills Ct, Las Vegas, NV 89135"
+    },
+    {
+        "price": "$1,900,000",
+        "home_state": "4 beds\n4.5 baths\n5,927 sq ft\n0.88 acre (lot)",
+        "address": "2727 Alta Dr, Las Vegas, NV 89107"
+    },
+    {
+        "price": "$340,000",
+        "home_state": "2 beds\n2 baths\n1,275 sq ft",
+        "address": "7656 Rolling View Dr #101, Las Vegas, NV 89149"
+    },
+    {
+        "price": "$264,500",
+        "home_state": "2 beds\n2 baths\n1,023 sq ft",
+        "address": "7950 W Flamingo Rd #1143, Las Vegas, NV 89147"
+    },
+    {
+        "price": "$475,000",
+        "home_state": "2 beds\n2 baths\n1,384 sq ft\n7,405 sq ft (lot)",
+        "address": "2550 Showcase Dr, Las Vegas, NV 89134"
+    }
+]
